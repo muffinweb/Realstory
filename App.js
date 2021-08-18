@@ -18,12 +18,13 @@ class App extends Component{
   render(){
     return(
         <NavigationContainer>
-          <Stack.Navigator initialRouteName="Contact">
+          <Stack.Navigator initialRouteName="Feed">
             <Stack.Screen options={
                 {
                     headerShown: false
                 }
             } name="Feed" component={Feed} />
+
             <Stack.Screen options={{
                 title: 'Developer Contact Panel',
                 headerStyle: {

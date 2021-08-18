@@ -12,19 +12,12 @@ import {
 import Header from './components/Header';
 import Story from './components/Story';
 
-const covers = [
-    'https://image.freepik.com/free-vector/autumn-landscape-cartoon-style-trees-clouds-earth-vector-illustration_114352-27.jpg',
-    'https://image.freepik.com/free-vector/background-flat-autumn-landscape_23-2148240235.jpg',
-    'https://img.freepik.com/free-vector/space-illustration-night-alien-fantasy-landscape_33099-1873.jpg?size=626&ext=jpg'
-];
-
 const storyContent = {
-    title: 'Interstellar',
-    cover: 'https://img.freepik.com/free-vector/space-illustration-night-alien-fantasy-landscape_33099-1873.jpg?size=626&ext=jpg',
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie efficitur ullamcorper. Curabitur cursus pulvinar metus ut tincidunt. Integer quis vulputate turpis. Vivamus varius eget ex vitae posuere. Maecenas rutrum ipsum non arcu auctor maximus. Donec eleifend blandit ex in facilisis. Nam viverra nulla sed orci euismod, ac suscipit nisi laoreet.Fusce pretium neque non felis sollicitudin, sed interdum augue iaculis. Nullam porta pulvinar risus, eget ultrices dolor iaculis ut. Sed id suscipit justo. Donec vitae nulla mollis, egestas libero et, consectetur neque. In dapibus tincidunt augue ac sagittis. Nulla nec venenatis sapien. Praesent eget arcu lobortis, gravida arcu id, molestie.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie efficitur ullamcorper. Curabitur cursus pulvinar metus ut tincidunt. Integer quis vulputate turpis. Vivamus varius eget ex vitae posuere. Maecenas rutrum ipsum non arcu auctor maximus. Donec eleifend blandit ex in facilisis. Nam viverra nulla sed orci euismod, ac suscipit nisi laoreet.Fusce pretium neque non felis sollicitudin, sed interdum augue iaculis. Nullam porta pulvinar risus, eget ultrices dolor iaculis ut. Sed id suscipit justo. Donec vitae nulla mollis, egestas libero et, consectetur neque. In dapibus tincidunt augue ac sagittis. Nulla nec venenatis sapien. Praesent eget arcu lobortis, gravida arcu id, molestie  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie efficitur ullamcorper. Curabitur cursus pulvinar metus ut tincidunt. Integer quis vulputate turpis. Vivamus varius eget ex vitae posuere. Maecenas rutrum ipsum non arcu auctor maximus. Donec eleifend blandit ex in facilisis. Nam viverra nulla sed orci euismod, ac suscipit nisi laoreet.Fusce pretium neque non felis sollicitudin, sed interdum augue iaculis. Nullam porta pulvinar risus, eget ultrices dolor iaculis ut. Sed id suscipit justo. Donec vitae nulla mollis, egestas libero et, consectetur neque. In dapibus tincidunt augue ac sagittis. Nulla nec venenatis sapien. Praesent eget arcu lobortis, gravida arcu id, molestie.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie efficitur ullamcorper. Curabitur cursus pulvinar metus ut tincidunt. Integer quis vulputate turpis. Vivamus varius eget ex vitae posuere. Maecenas rutrum ipsum non arcu auctor maximus. Donec eleifend blandit ex in facilisis. Nam viverra nulla sed orci euismod, ac suscipit nisi laoreet.Fusce pretium neque non felis sollicitudin, sed interdum augue iaculis. Nullam porta pulvinar risus, eget ultrices dolor iaculis ut. Sed id suscipit justo. Donec vitae nulla mollis, egestas libero et, consectetur neque. In dapibus tincidunt augue ac sagittis. Nulla nec venenatis sapien. Praesent eget arcu lobortis, gravida arcu id, molestie
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie efficitur ullamcorper. Curabitur cursus pulvinar metus ut tincidunt. Integer quis vulputate turpis. Vivamus varius eget ex vitae posuere. Maecenas rutrum ipsum non arcu auctor maximus. Donec eleifend blandit ex in facilisis. Nam viverra nulla sed orci euismod, ac suscipit nisi laoreet.Fusce pretium neque non felis sollicitudin, sed interdum augue iaculis. Nullam porta pulvinar risus, eget ultrices dolor iaculis ut. Sed id suscipit justo. Donec vitae nulla mollis, egestas libero et, consectetur neque. In dapibus tincidunt augue ac sagittis. Nulla nec venenatis sapien. Praesent eget arcu lobortis, gravida arcu id, molestie.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie efficitur ullamcorper. Curabitur cursus pulvinar metus ut tincidunt. Integer quis vulputate turpis. Vivamus varius eget ex vitae posuere. Maecenas rutrum ipsum non arcu auctor maximus. Donec eleifend blandit ex in facilisis. Nam viverra nulla sed orci euismod, ac suscipit nisi laoreet.Fusce pretium neque non felis sollicitudin, sed interdum augue iaculis. Nullam porta pulvinar risus, eget ultrices dolor iaculis ut. Sed id suscipit justo. Donec vitae nulla mollis, egestas libero et, consectetur neque. In dapibus tincidunt augue ac sagittis. Nulla nec venenatis sapien. Praesent eget arcu lobortis, gravida arcu id, molestie
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie efficitur ullamcorper. Curabitur cursus pulvinar metus ut tincidunt. Integer quis vulputate turpis. Vivamus varius eget ex vitae posuere. Maecenas rutrum ipsum non arcu auctor maximus. Donec eleifend blandit ex in facilisis. Nam viverra nulla sed orci euismod, ac suscipit nisi laoreet.Fusce pretium neque non felis sollicitudin, sed interdum augue iaculis. Nullam porta pulvinar risus, eget ultrices dolor iaculis ut. Sed id suscipit justo. Donec vitae nulla mollis, egestas libero et, consectetur neque. In dapibus tincidunt augue ac sagittis. Nulla nec venenatis sapien. Praesent eget arcu lobortis, gravida arcu id, molestie.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie efficitur ullamcorper. Curabitur cursus pulvinar metus ut tincidunt. Integer quis vulputate turpis. Vivamus varius eget ex vitae posuere. Maecenas rutrum ipsum non arcu auctor maximus. Donec eleifend blandit ex in facilisis. Nam viverra nulla sed orci euismod, ac suscipit nisi laoreet.Fusce pretium neque non felis sollicitudin, sed interdum augue iaculis. Nullam porta pulvinar risus, eget ultrices dolor iaculis ut. Sed id suscipit justo. Donec vitae nulla mollis, egestas libero et, consectetur neque. In dapibus tincidunt augue ac sagittis. Nulla nec venenatis sapien. Praesent eget arcu lobortis, gravida arcu id, molestie
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie efficitur ullamcorper. Curabitur cursus pulvinar metus ut tincidunt. Integer quis vulputate turpis. Vivamus varius eget ex vitae posuere. Maecenas rutrum ipsum non arcu auctor maximus. Donec eleifend blandit ex in facilisis. Nam viverra nulla sed orci euismod, ac suscipit nisi laoreet.Fusce pretium neque non felis sollicitudin, sed interdum augue iaculis. Nullam porta pulvinar risus, eget ultrices dolor iaculis ut. Sed id suscipit justo. Donec vitae nulla mollis, egestas libero et, consectetur neque. In dapibus tincidunt augue ac sagittis. Nulla nec venenatis sapien. Praesent eget arcu lobortis, gravida arcu id, molestie.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie efficitur ullamcorper. Curabitur cursus pulvinar metus ut tincidunt. Integer quis vulputate turpis. Vivamus varius eget ex vitae posuere. Maecenas rutrum ipsum non arcu auctor maximus. Donec eleifend blandit ex in facilisis. Nam viverra nulla sed orci euismod, ac suscipit nisi laoreet.Fusce pretium neque non felis sollicitudin, sed interdum augue iaculis. Nullam porta pulvinar risus, eget ultrices dolor iaculis ut. Sed id suscipit justo. Donec vitae nulla mollis, egestas libero et, consectetur neque. In dapibus tincidunt augue ac sagittis. Nulla nec venenatis sapien. Praesent eget arcu lobortis, gravida arcu id, molestie`
+    title: 'Realstory',
+    cover: 'https://realstory.ugurcengiz.com/media/img/la_hw.jpg',
+    content: `Hoşgeldin. Günümüzde hikaye kelimesi ve kavramı ne kadar da değişti, değil mi? "Hikaye" kelimesini kullanırken öykü, yaşanmışlıklar aklımıza gelirdi. Şimdilerde sanal sosyal uygulamalardaki kıssa paylaşımlar aklımıza geliyor. Hikaye kelimesinin sözlük anlamını dijital ortamda yeniden deneyimlemek ister misin? Ortalama 1-3 dakika okuma süreli, seni anlık başka alemlere götürecek hikayeler... 
+    
+    O halde Sihirli butona şans vermeye ne dersin?`
 }
 
 class Feed extends Component{
@@ -35,7 +28,8 @@ class Feed extends Component{
         //StateLine
         this.state = {
             storyIsLoaded: true,
-            activeStoryData: storyContent
+            activeStoryData: storyContent,
+            readedStoriesIds: []
         };
     }
 
@@ -48,7 +42,21 @@ class Feed extends Component{
         const that = this;
 
         setTimeout(() => {
-            fetch('https://realstory.ugurcengiz.com/api/random')
+            fetch('https://realstory.ugurcengiz.com/api/random', {
+                method: 'POST', // *GET, POST, PUT, DELETE, etc.
+                mode: 'cors', // no-cors, *cors, same-origin
+                cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+                credentials: 'same-origin', // include, *same-origin, omit
+                headers: {
+                  'Content-Type': 'application/json'
+                  // 'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                redirect: 'follow', // manual, *follow, error
+                referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+                body: JSON.stringify({
+                    readedStoriesIds: that.state.readedStoriesIds
+                }) // body data type must match "Content-Type" header
+              })
                 .then((response) => response.json())
                 .then((res) => {
                     that.setState({
@@ -56,12 +64,18 @@ class Feed extends Component{
                         activeStoryData: {
                             title: res.title,
                             cover: res.cover,
-                            content: res.content
+                            content: res.content,
                         }
-                    })
+                    });
+
+                    that.setState({
+                        readedStoriesIds: that.state.readedStoriesIds.concat([res.id])
+                    });
+
                 }).catch(function(error){
                 console.log(error);
             })
+            console.log([... new Set(that.state.readedStoriesIds)]);
         }, 1500);
     }
 
