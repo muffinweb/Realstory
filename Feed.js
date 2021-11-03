@@ -1,16 +1,19 @@
 import React, {Component} from 'react';
 import {
+    Button,
     TouchableOpacity,
     View,
     Image,
     Text,
     ActivityIndicator,
-    ScrollView
+    ScrollView,
+    Alert
 } from 'react-native';
 
 
 import Header from './components/Header';
 import Story from './components/Story';
+
 
 const storyContent = {
     title: 'Realstory',
@@ -24,6 +27,7 @@ class Feed extends Component{
 
     constructor(props){
         super(props);
+        var that = props;
 
         //StateLine
         this.state = {
@@ -88,6 +92,10 @@ class Feed extends Component{
                     <Story storyData={this.state.activeStoryData}/>:
                     <ActivityIndicator size="large" color="#1976d2"/>
                 }
+                <Button 
+                    title="Ücretsiz Premium Dene"
+                    onPress={() => this.props.navigation.navigate("Custom")}
+                />
             </View>
         )
     }
